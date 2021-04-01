@@ -1,0 +1,4 @@
+alias ll='ls -l'
+alias vim='vi'
+cdls() { cd $1;ls -l; }
+alias cd='cdls'
