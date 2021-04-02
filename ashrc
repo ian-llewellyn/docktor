@@ -1,4 +1,9 @@
+# Shortcut common on some flavours
 alias ll='ls -l'
+
+# Personal trip hazard
 alias vim='vi'
+
+# Speed up explorations
 cdls() { cd $1;ls -l; }
 alias cd='cdls'

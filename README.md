@@ -1,6 +1,6 @@
 # Docktor
 
-Docktor is a container that can be spun up within a Kubernetes Pod or on a system running Docker engine to provide extra insight into the structure / workings of a running container.
+Docktor is a container that can be spun up within a Kubernetes Pod or on a system running Docker engine to provide extra insight into the structure / workings of a running container - particularly those that have little or no debugging tools inside.
 
 The ambitions of docktor are to:
 * Be easy to get started with
@@ -9,7 +9,7 @@ The ambitions of docktor are to:
 * Enable extensibility (contributors via `git branch` and users via Dockerfile `FROM`)
 
 ## Getting started examples
-In all of the examples below, the Docktor container uses the process namespace of the container being debugged. You can also walk onto that container's root filesystem using `cd /proc/1/root/`.
+The examples below can be used to 'attach' any image you want to an existing container. In these examples, the Docktor container uses the process namespace of the container being debugged. You can also walk onto that container's root filesystem using `cd /proc/1/root/`.
 
 ### Docker
 Using the `--pid` argument to `docker run`, you can run your new container in the same process namespace as the already running one.
